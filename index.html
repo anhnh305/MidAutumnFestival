@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .progress {
+            position: relative;
+            height: 10px;
+            width: 1110%;
+            border: 10px solid #f4a261;
+            border-radius: 15px;
+        }
+
+        .progress .color {
+            position: absolute;
+            background-color: #ffffff;
+            width: 0px;
+            height: 10px;
+            border-radius: 15px;
+            animation: progres 4s infinite linear;
+        }
+
+        @keyframes progres {
+            0% {
+                width: 0%;
+            }
+
+            25% {
+                width: 50%;
+            }
+
+            50% {
+                width: 75%;
+            }
+
+            75% {
+                width: 85%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* DEMO-SPECIFIC STYLES */
+        .typewriter h1 {
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🥮 Savvycom Mid Autumn Festival</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+    <!-- <div class="progress"><div class="color"></div></div>  onload="removeLoader();-->
+    <div id="midautumn" class="body-wrap">
+        <main>
+            <section class="hero">
+                <div class="typewriter" style="width: 30%; float: left;">
+                    <h1 id="wishes" style="word-wrap:break-word;">The cat and the hat.</h1>
+                </div>
+                <div class="container">
+                    <br /><br /><br /><br /><br /><br />
+                    <center>
+                        <image id="mooncake"
+                            style="height: 460.26px; width: 560.59px; padding-top: 0.5%; border-radius: 25px;"
+                            src="./src/images/mungbean.jpg" />
+                    </center>
+                </div>
+            </section>
+    </div>
+    </main>
+    </div>
+    <script src="dist/js/mooncake.js"></script>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
